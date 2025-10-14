@@ -1,0 +1,161 @@
+<mxfile>
+  <diagram id="1" name="小型博物馆AI导览系统-模块架构图">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- 1. 顶层系统节点 -->
+        <mxCell id="2" value="&lt;b&gt;小型博物馆AI导览系统&lt;/b&gt;" style="shape=rectangle;fillColor=#f0f8ff;strokeColor=#1e40af;strokeWidth=2;fontSize=14;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="350" y="50" width="200" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- 2. 第一层模块（用户交互层/业务逻辑层/数据服务层） -->
+        <!-- 用户交互层 -->
+        <mxCell id="3" value="&lt;b&gt;用户交互层&lt;/b&gt;" style="shape=rectangle;fillColor=#e6f7ff;strokeColor=#1890ff;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="150" y="180" width="160" height="50" as="geometry"/>
+        </mxCell>
+        <!-- 业务逻辑层 -->
+        <mxCell id="4" value="&lt;b&gt;业务逻辑层&lt;/b&gt;" style="shape=rectangle;fillColor=#e6f7ff;strokeColor=#1890ff;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="380" y="180" width="160" height="50" as="geometry"/>
+        </mxCell>
+        <!-- 数据服务层 -->
+        <mxCell id="5" value="&lt;b&gt;数据服务层&lt;/b&gt;" style="shape=rectangle;fillColor=#e6f7ff;strokeColor=#1890ff;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="610" y="180" width="160" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- 3. 第二层模块（用户交互层子模块） -->
+        <mxCell id="6" value="前端界面模块" style="shape=rectangle;fillColor=#f9f9f9;strokeColor=#666;strokeWidth=1;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="120" y="280" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" value="管理后台模块" style="shape=rectangle;fillColor=#f9f9f9;strokeColor=#666;strokeWidth=1;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="180" y="350" width="120" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- 4. 第二层模块（业务逻辑层子模块） -->
+        <mxCell id="8" value="路线推荐引擎" style="shape=rectangle;fillColor=#f9f9f9;strokeColor=#666;strokeWidth=1;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="350" y="280" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="展区管理服务" style="shape=rectangle;fillColor=#f9f9f9;strokeColor=#666;strokeWidth=1;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="320" y="350" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="文物管理服务" style="shape=rectangle;fillColor=#f9f9f9;strokeColor=#666;strokeWidth=1;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="410" y="350" width="120" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- 5. 第二层模块（数据服务层子模块） -->
+        <mxCell id="11" value="数据访问模块" style="shape=rectangle;fillColor=#f9f9f9;strokeColor=#666;strokeWidth=1;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="580" y="280" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" value="外部服务集成" style="shape=rectangle;fillColor=#f9f9f9;strokeColor=#666;strokeWidth=1;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="580" y="350" width="120" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- 6. 连接关系（顶层→第一层） -->
+        <mxCell id="13" value="" style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#333;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="110" as="source"/>
+            <mxPoint x="230" y="180" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" value="" style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#333;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="110" as="source"/>
+            <mxPoint x="460" y="180" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" value="" style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#333;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="110" as="source"/>
+            <mxPoint x="690" y="180" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 7. 连接关系（用户交互层→子模块） -->
+        <mxCell id="16" value="" style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#333;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="230" as="source"/>
+            <mxPoint x="180" y="280" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" value="" style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#333;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="230" as="source"/>
+            <mxPoint x="240" y="350" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 8. 连接关系（业务逻辑层→子模块） -->
+        <mxCell id="18" value="" style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#333;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="230" as="source"/>
+            <mxPoint x="410" y="280" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" value="" style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#333;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="230" as="source"/>
+            <mxPoint x="380" y="350" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20" value="" style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#333;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="230" as="source"/>
+            <mxPoint x="470" y="350" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 9. 连接关系（数据服务层→子模块） -->
+        <mxCell id="21" value="" style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#333;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="230" as="source"/>
+            <mxPoint x="640" y="280" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22" value="" style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#333;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="230" as="source"/>
+            <mxPoint x="640" y="350" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 10. 业务交互连接（带标签） -->
+        <!-- 前端界面模块 → 路线推荐引擎（请求路线/地图） -->
+        <mxCell id="23" value="请求路线/地图" style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#333;strokeWidth=1;labelBackgroundColor=#fff;labelBorderColor=#ccc;labelPadding=4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="300" as="source"/>
+            <mxPoint x="350" y="300" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        <!-- 管理后台模块 → 展区管理服务（管理指令） -->
+        <mxCell id="24" value="管理指令" style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#333;strokeWidth=1;labelBackgroundColor=#fff;labelBorderColor=#ccc;labelPadding=4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="370" as="source"/>
+            <mxPoint x="380" y="370" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        <!-- 管理后台模块 → 文物管理服务（管理指令） -->
+        <mxCell id="25" value="管理指令" style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#333;strokeWidth=1;labelBackgroundColor=#fff;labelBorderColor=#ccc;labelPadding=4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="370" as="source"/>
+            <mxPoint x="470" y="370" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        <!-- 路线推荐引擎 → 数据访问模块（读取数据） -->
+        <mxCell id="26" value="读取数据" style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#333;strokeWidth=1;labelBackgroundColor=#fff;labelBorderColor=#ccc;labelPadding=4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="300" as="source"/>
+            <mxPoint x="580" y="300" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        <!-- 展区管理服务 → 数据访问模块（读写数据） -->
+        <mxCell id="27" value="读写数据" style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#333;strokeWidth=1;labelBackgroundColor=#fff;labelBorderColor=#ccc;labelPadding=4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="370" as="source"/>
+            <mxPoint x="640" y="370" as="target"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
