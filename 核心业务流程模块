@@ -1,0 +1,144 @@
+<mxfile>
+  <diagram id="route-recommendation-flow" name="路线推荐业务流程">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- 主流程节点 -->
+        <mxCell id="2" value="A [路线推荐业务流程]" style="rect;fillColor=#f0f7ff;strokeColor=#409eff;strokeWidth=2;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="400" y="50" width="200" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- 一级流程节点 -->
+        <mxCell id="3" value="B [接收用户请求]" style="rect;fillColor=#e6f7ff;strokeColor=#1890ff;strokeWidth=2;fontSize=14;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="200" y="180" width="180" height="50" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="4" value="C [执行AI算法]" style="rect;fillColor=#e6f7ff;strokeColor=#1890ff;strokeWidth=2;fontSize=14;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="450" y="180" width="180" height="50" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="5" value="D [返回推荐结果]" style="rect;fillColor=#e6f7ff;strokeColor=#1890ff;strokeWidth=2;fontSize=14;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="700" y="180" width="180" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- B的子节点 -->
+        <mxCell id="6" value="B1 [验证输入参数]" style="rect;fillColor=#f0f9ff;strokeColor=#69b1ff;strokeWidth=1;fontSize=12;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="150" y="280" width="150" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="7" value="B2 [解析用户偏好]" style="rect;fillColor=#f0f9ff;strokeColor=#69b1ff;strokeWidth=1;fontSize=12;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="250" y="280" width="150" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- C的子节点 -->
+        <mxCell id="8" value="C1 [获取展区数据]" style="rect;fillColor=#f0f9ff;strokeColor=#69b1ff;strokeWidth=1;fontSize=12;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="400" y="280" width="150" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="9" value="C2 [贪心算法筛选]" style="rect;fillColor=#f0f9ff;strokeColor=#69b1ff;strokeWidth=1;fontSize=12;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="400" y="340" width="150" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="10" value="C3 [动态规划优化]" style="rect;fillColor=#f0f9ff;strokeColor=#69b1ff;strokeWidth=1;fontSize=12;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="400" y="400" width="150" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- D的子节点 -->
+        <mxCell id="11" value="D1 [计算总时长]" style="rect;fillColor=#f0f9ff;strokeColor=#69b1ff;strokeWidth=1;fontSize=12;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="650" y="280" width="150" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="12" value="D2 [生成路线描述]" style="rect;fillColor=#f0f9ff;strokeColor=#69b1ff;strokeWidth=1;fontSize=12;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="750" y="280" width="150" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="13" value="D3 [格式化JSON结果]" style="rect;fillColor=#f0f9ff;strokeColor=#69b1ff;strokeWidth=1;fontSize=12;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="700" y="340" width="150" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- 数据库节点 -->
+        <mxCell id="14" value="E [展区数据库]" style="ellipse;fillColor=#fff7e6;strokeColor=#fa8c16;strokeWidth=1;fontSize=12;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="250" y="400" width="120" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="15" value="F [路线记录库]" style="ellipse;fillColor=#fff7e6;strokeColor=#fa8c16;strokeWidth=1;fontSize=12;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="650" y="400" width="120" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- 连接线 -->
+        <!-- 主流程 -->
+        <mxCell id="16" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;startArrow=none;endArrow=classic;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="17" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;startArrow=none;endArrow=classic;" edge="1" parent="1" source="2" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="18" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;startArrow=none;endArrow=classic;" edge="1" parent="1" source="2" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- B的子节点连接 -->
+        <mxCell id="19" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;startArrow=none;endArrow=classic;" edge="1" parent="1" source="3" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="20" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;startArrow=none;endArrow=classic;" edge="1" parent="1" source="3" target="7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- C的子节点连接 -->
+        <mxCell id="21" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;startArrow=none;endArrow=classic;" edge="1" parent="1" source="4" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="22" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;startArrow=none;endArrow=classic;" edge="1" parent="1" source="8" target="9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="23" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;startArrow=none;endArrow=classic;" edge="1" parent="1" source="9" target="10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- D的子节点连接 -->
+        <mxCell id="24" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;startArrow=none;endArrow=classic;" edge="1" parent="1" source="5" target="11">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="25" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;startArrow=none;endArrow=classic;" edge="1" parent="1" source="5" target="12">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="26" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;startArrow=none;endArrow=classic;" edge="1" parent="1" source="11" target="13">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="27" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;startArrow=none;endArrow=classic;" edge="1" parent="1" source="12" target="13">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- 流程跳转连接 -->
+        <mxCell id="28" value="验证通过" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;labelBackgroundColor=#fff;labelBorderColor=#666;labelPadding=3;startArrow=none;endArrow=classic;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="29" value="算法完成" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;labelBackgroundColor=#fff;labelBorderColor=#666;labelPadding=3;startArrow=none;endArrow=classic;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- 数据库连接 -->
+        <mxCell id="30" value="读取" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;labelBackgroundColor=#fff;labelBorderColor=#666;labelPadding=3;startArrow=none;endArrow=classic;" edge="1" parent="1" source="8" target="14">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="31" value="更新" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;labelBackgroundColor=#fff;labelBorderColor=#666;labelPadding=3;startArrow=none;endArrow=classic;" edge="1" parent="1" source="10" target="15">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+    
