@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0" version="28.2.5">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0" version="28.2.6" pages="2">
   <diagram id="6a731a19-8d31-9384-78a2-239565b7b9f0" name="Page-1">
-    <mxGraphModel dx="2969" dy="1802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2227" dy="1322" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -405,6 +405,121 @@
         </mxCell>
         <mxCell id="ECqiEvyCKfUZ2uqSirjC-230" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;结束end&lt;/span&gt;" style="fillColor=#FFCDD2;whiteSpace=wrap;html=1;strokeWidth=2;rounded=1;arcSize=12;" parent="1" vertex="1">
           <mxGeometry x="310" y="2230" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z0sJDQ-RKIABcUyuvv6s-16" value="&lt;b&gt;HTTP/RESTful API&lt;/b&gt;" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;labelBackgroundColor=#fff;labelBorderColor=#666;labelPadding=5;align=center;verticalAlign=middle;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="150" as="source" />
+            <mxPoint x="450" y="150" as="target" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z0sJDQ-RKIABcUyuvv6s-17" value="&lt;b&gt;数据访问&lt;/b&gt;" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;labelBackgroundColor=#fff;labelBorderColor=#666;labelPadding=5;align=center;verticalAlign=middle;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="200" as="source" />
+            <mxPoint x="200" y="300" as="target" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z0sJDQ-RKIABcUyuvv6s-18" value="&lt;b&gt;地图渲染/路径绘制&lt;/b&gt;" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;labelBackgroundColor=#fff;labelBorderColor=#666;labelPadding=5;align=center;verticalAlign=middle;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="200" as="source" />
+            <mxPoint x="600" y="400" as="target" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="k3DGM3ZLRDpPOjV96Ttd" name="第 2 页">
+    <mxGraphModel dx="2400" dy="1322" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1JtrW8WsdRZyClxL9srz-15" value="&lt;b&gt;HTTP/RESTful API&lt;/b&gt;" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;labelBackgroundColor=#fff;labelBorderColor=#666;labelPadding=5;align=center;verticalAlign=middle;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="150" as="source" />
+            <mxPoint x="450" y="150" as="target" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-16" value="&lt;b&gt;数据访问&lt;/b&gt;" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;labelBackgroundColor=#fff;labelBorderColor=#666;labelPadding=5;align=center;verticalAlign=middle;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="200" as="source" />
+            <mxPoint x="200" y="300" as="target" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-17" value="&lt;b&gt;地图渲染/路径绘制&lt;/b&gt;" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;labelBackgroundColor=#fff;labelBorderColor=#666;labelPadding=5;align=center;verticalAlign=middle;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="200" as="source" />
+            <mxPoint x="600" y="400" as="target" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-37" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;HTTP / RESTful&amp;nbsp; API&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1JtrW8WsdRZyClxL9srz-18" target="1JtrW8WsdRZyClxL9srz-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-18" value=" [表现层 Presentation Layer]" style="fontSize=36;swimlane;swimlaneFillColor=#f0f7ff;swimlaneLineColor=#409eff;swimlaneTextColor=#333;align=center;verticalAlign=top;spacingTop=10;spacingLeft=10;spacingRight=10;spacingBottom=10;overflow=hidden;whiteSpace=wrap;startSize=60;" vertex="1" parent="1">
+          <mxGeometry x="245" y="70" width="460" height="180" as="geometry">
+            <mxRectangle x="100" y="60" width="210" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-19" value=" [游客端 Web UI]&#xa;Vue 3 + Element-Plus" style="fontSize=18;rect;fillColor=#e6f7ff;strokeColor=#1890ff;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;" vertex="1" parent="1JtrW8WsdRZyClxL9srz-18">
+          <mxGeometry x="30" y="80" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-20" value=" [管理员端 Web UI]&#xa;Vue 3 + Element-Plus" style="fontSize=18;rect;fillColor=#e6f7ff;strokeColor=#1890ff;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;" vertex="1" parent="1JtrW8WsdRZyClxL9srz-18">
+          <mxGeometry x="236" y="80" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-38" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;数据访问&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="1JtrW8WsdRZyClxL9srz-21" target="1JtrW8WsdRZyClxL9srz-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-39" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;地图渲染 / 路径绘制&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="1JtrW8WsdRZyClxL9srz-21" target="1JtrW8WsdRZyClxL9srz-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-21" value=" [应用层/业务逻辑层]&#xa;Application/Business Layer" style="fontSize=24;swimlane;swimlaneFillColor=#f0fff4;swimlaneLineColor=#52c41a;swimlaneTextColor=#333;align=center;verticalAlign=top;spacingTop=10;spacingLeft=10;spacingRight=10;spacingBottom=10;overflow=hidden;whiteSpace=wrap;startSize=60;" vertex="1" parent="1">
+          <mxGeometry x="20" y="350" width="910" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-22" value="[展区管理模块]" style="fontSize=18;rect;fillColor=#f9ffe6;strokeColor=#7cb305;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;" vertex="1" parent="1JtrW8WsdRZyClxL9srz-21">
+          <mxGeometry x="20" y="110" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-23" value="[文物管理模块]" style="fontSize=18;rect;fillColor=#f9ffe6;strokeColor=#7cb305;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;" vertex="1" parent="1JtrW8WsdRZyClxL9srz-21">
+          <mxGeometry x="250" y="110" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-24" value="[路线推荐模块]&#xa;AI算法服务" style="fontSize=18;rect;fillColor=#f9ffe6;strokeColor=#7cb305;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;" vertex="1" parent="1JtrW8WsdRZyClxL9srz-21">
+          <mxGeometry x="470" y="110" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-25" value="[用户交互模块]" style="fontSize=18;rect;fillColor=#f9ffe6;strokeColor=#7cb305;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;" vertex="1" parent="1JtrW8WsdRZyClxL9srz-21">
+          <mxGeometry x="690" y="110" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-26" value=" [数据持久层]&#xa;Persistence Layer" style="fontSize=18;swimlane;swimlaneFillColor=#fff0f0;swimlaneLineColor=#f5222d;swimlaneTextColor=#333;align=center;verticalAlign=top;spacingTop=10;spacingLeft=10;spacingRight=10;spacingBottom=10;overflow=hidden;whiteSpace=wrap;startSize=60;" vertex="1" parent="1">
+          <mxGeometry x="70" y="700" width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-27" value="[展区数据]&#xa;MySQL" style="fontSize=18;rect;fillColor=#fff2f0;strokeColor=#fa8c16;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;" vertex="1" parent="1JtrW8WsdRZyClxL9srz-26">
+          <mxGeometry x="50" y="80" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-28" value="[文物数据]&#xa;MySQL" style="fontSize=18;rect;fillColor=#fff2f0;strokeColor=#fa8c16;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;" vertex="1" parent="1JtrW8WsdRZyClxL9srz-26">
+          <mxGeometry x="50" y="160" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-29" value="[业务数据]&#xa;MySQL" style="fontSize=18;rect;fillColor=#fff2f0;strokeColor=#fa8c16;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;" vertex="1" parent="1JtrW8WsdRZyClxL9srz-26">
+          <mxGeometry x="50" y="240" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-30" value=" [第三方服务层]&#xa;External Services" style="swimlane;swimlaneFillColor=#f0f0ff;swimlaneLineColor=#722ed1;swimlaneTextColor=#333;align=center;verticalAlign=top;spacingTop=10;spacingLeft=10;spacingRight=10;spacingBottom=10;overflow=hidden;whiteSpace=wrap;startSize=60;" vertex="1" parent="1">
+          <mxGeometry x="640" y="700" width="300" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-31" value="[高德地图 API]" style="fontSize=18;rect;fillColor=#f9f0ff;strokeColor=#9254de;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;" vertex="1" parent="1JtrW8WsdRZyClxL9srz-30">
+          <mxGeometry x="50" y="100" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-32" value="HTTP/RESTful API" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;labelBackgroundColor=#fff;labelBorderColor=#666;labelPadding=5;align=center;verticalAlign=middle;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="150" as="source" />
+            <mxPoint x="450" y="150" as="target" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-33" value="数据访问" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;labelBackgroundColor=#fff;labelBorderColor=#666;labelPadding=5;align=center;verticalAlign=middle;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="200" as="source" />
+            <mxPoint x="200" y="300" as="target" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1JtrW8WsdRZyClxL9srz-34" value="地图渲染/路径绘制" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;labelBackgroundColor=#fff;labelBorderColor=#666;labelPadding=5;align=center;verticalAlign=middle;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="200" as="source" />
+            <mxPoint x="600" y="400" as="target" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
