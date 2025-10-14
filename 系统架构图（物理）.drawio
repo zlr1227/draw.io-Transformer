@@ -1,10 +1,73 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0" version="28.2.6">
-  <diagram name="第 1 页" id="ubo03divRaXm40eON8MX">
-    <mxGraphModel>
+<mxfile>
+  <diagram id="system-architecture" name="系统架构图">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- 客户端子图 -->
+        <mxCell id="2" value="Client [客户端]" style="swimlane;swimlaneFillColor=#f0f7ff;swimlaneLineColor=#409eff;swimlaneTextColor=#333;align=center;verticalAlign=top;spacingTop=10;spacingLeft=10;spacingRight=10;spacingBottom=10;overflow=hidden;whiteSpace=wrap;startSize=60;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="50" y="100" width="250" height="180" as="geometry"/>
+        </mxCell>
+        <!-- 用户浏览器 -->
+        <mxCell id="3" value="C1 [用户浏览器]&#10;Chrome/Firefox/Safari" style="rect;fillColor=#e6f7ff;strokeColor=#1890ff;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;fontSize=14;" vertex="1" parent="2">
+          <mxGeometry x="30" y="50" width="190" height="50" as="geometry"/>
+        </mxCell>
+        <!-- 管理员浏览器 -->
+        <mxCell id="4" value="C2 [管理员浏览器]&#10;Chrome/Firefox" style="rect;fillColor=#e6f7ff;strokeColor=#1890ff;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;fontSize=14;" vertex="1" parent="2">
+          <mxGeometry x="30" y="120" width="190" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- 网络 -->
+        <mxCell id="5" value="Network [网络]&#10;互联网/局域网&#10;HTTPS" style="rect;fillColor=#f0fff4;strokeColor=#52c41a;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="350" y="150" width="180" height="80" as="geometry"/>
+        </mxCell>
+        
+        <!-- 服务器端子图 -->
+        <mxCell id="6" value="Server [服务器端]" style="swimlane;swimlaneFillColor=#fff0f0;swimlaneLineColor=#f5222d;swimlaneTextColor=#333;align=center;verticalAlign=top;spacingTop=10;spacingLeft=10;spacingRight=10;spacingBottom=10;overflow=hidden;whiteSpace=wrap;startSize=60;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="580" y="100" width="250" height="180" as="geometry"/>
+        </mxCell>
+        <!-- Web/应用服务器 -->
+        <mxCell id="7" value="S1 [Web/应用服务器]&#10;Spring Boot with Embedded Tomcat" style="rect;fillColor=#fff2f0;strokeColor=#fa8c16;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;fontSize=14;" vertex="1" parent="6">
+          <mxGeometry x="30" y="50" width="190" height="50" as="geometry"/>
+        </mxCell>
+        <!-- 数据库服务器 -->
+        <mxCell id="8" value="S2 [数据库服务器]&#10;MySQL 8.0" style="rect;fillColor=#fff2f0;strokeColor=#fa8c16;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;fontSize=14;" vertex="1" parent="6">
+          <mxGeometry x="30" y="120" width="190" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- 外部服务 -->
+        <mxCell id="9" value="External [外部服务]&#10;高德地图服务&#10;JavaScript API" style="rect;fillColor=#f0f0ff;strokeColor=#722ed1;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="880" y="150" width="200" height="80" as="geometry"/>
+        </mxCell>
+        
+        <!-- 连接线 -->
+        <!-- 客户端到网络 -->
+        <mxCell id="10" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;endArrow=classic;" edge="1" parent="1" source="2" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- 网络到服务器端 -->
+        <mxCell id="11" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;endArrow=classic;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- 服务器端到Web服务器 -->
+        <mxCell id="12" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;startArrow=none;endArrow=none;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- 服务器端到数据库服务器 -->
+        <mxCell id="13" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;startArrow=none;endArrow=none;" edge="1" parent="1" source="6" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- Web服务器到外部服务（虚线） -->
+        <mxCell id="14" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;strokeDasharray=5,5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;endArrow=classic;" edge="1" parent="1" source="7" target="9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
 </mxfile>
+    
