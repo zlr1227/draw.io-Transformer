@@ -1,0 +1,164 @@
+<mxfile>
+  <diagram id="1" name="小型博物馆AI导览系统-组件关系图">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- 1. 前端组件（顶层，蓝色系） -->
+        <mxCell id="2" value="&lt;b&gt;Web前端&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:11px'&gt;Vue.js Application&lt;/span&gt;&lt;br/&gt;&lt;span style='font-size:10px;color:#666'&gt;«component»&lt;/span&gt;" 
+                style="shape=rectangle;fillColor=#e6f7ff;strokeColor=#1890ff;strokeWidth=2;fontSize=13;align=center;verticalAlign=middle;spacing=8" 
+                vertex="1" parent="1">
+          <mxGeometry x="480" y="80" width="180" height="70" as="geometry"/>
+        </mxCell>
+        
+        <!-- 2. 后端核心组件（中层，绿色系） -->
+        <mxCell id="3" value="&lt;b&gt;REST API控制器&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:11px'&gt;Spring MVC Controllers&lt;/span&gt;&lt;br/&gt;&lt;span style='font-size:10px;color:#666'&gt;«component»&lt;/span&gt;" 
+                style="shape=rectangle;fillColor=#f0fff4;strokeColor=#36b37e;strokeWidth=2;fontSize=13;align=center;verticalAlign=middle;spacing=8" 
+                vertex="1" parent="1">
+          <mxGeometry x="250" y="220" width="180" height="70" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="4" value="&lt;b&gt;业务服务层&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:11px'&gt;Spring Service Beans&lt;/span&gt;&lt;br/&gt;&lt;span style='font-size:10px;color:#666'&gt;«component»&lt;/span&gt;" 
+                style="shape=rectangle;fillColor=#f0fff4;strokeColor=#36b37e;strokeWidth=2;fontSize=13;align=center;verticalAlign=middle;spacing=8" 
+                vertex="1" parent="1">
+          <mxGeometry x="480" y="220" width="180" height="70" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="5" value="&lt;b&gt;数据访问层&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:11px'&gt;Spring Data JPA&lt;/span&gt;&lt;br/&gt;&lt;span style='font-size:10px;color:#666'&gt;«component»&lt;/span&gt;" 
+                style="shape=rectangle;fillColor=#f0fff4;strokeColor=#36b37e;strokeWidth=2;fontSize=13;align=center;verticalAlign=middle;spacing=8" 
+                vertex="1" parent="1">
+          <mxGeometry x="710" y="220" width="180" height="70" as="geometry"/>
+        </mxCell>
+        
+        <!-- 3. 外部服务组件（底层，橙色系） -->
+        <mxCell id="6" value="&lt;b&gt;地图服务客户端&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:11px'&gt;AMap JavaScript API&lt;/span&gt;&lt;br/&gt;&lt;span style='font-size:10px;color:#666'&gt;«component»&lt;/span&gt;" 
+                style="shape=rectangle;fillColor=#fff7e6;strokeColor=#ff8c00;strokeWidth=2;fontSize=13;align=center;verticalAlign=middle;spacing=8" 
+                vertex="1" parent="1">
+          <mxGeometry x="250" y="380" width="180" height="70" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="7" value="&lt;b&gt;数据库&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:11px'&gt;MySQL 8.0&lt;/span&gt;&lt;br/&gt;&lt;span style='font-size:10px;color:#666'&gt;«component»&lt;/span&gt;" 
+                style="shape=rectangle;fillColor=#fff7e6;strokeColor=#ff8c00;strokeWidth=2;fontSize=13;align=center;verticalAlign=middle;spacing=8" 
+                vertex="1" parent="1">
+          <mxGeometry x="710" y="380" width="180" height="70" as="geometry"/>
+        </mxCell>
+        
+        <!-- 4. 接口定义（紫色系） -->
+        <mxCell id="8" value="&lt;b&gt;RouteRecommendationAPI&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:10px;color:#666'&gt;«interface»&lt;/span&gt;" 
+                style="shape=rectangle;fillColor=#f9f0ff;strokeColor=#9254de;strokeWidth=1;fontSize=12;align=center;verticalAlign=middle" 
+                vertex="1" parent="1">
+          <mxGeometry x="370" y="150" width="140" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="9" value="&lt;b&gt;ExhibitRepository&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:10px;color:#666'&gt;«interface»&lt;/span&gt;" 
+                style="shape=rectangle;fillColor=#f9f0ff;strokeColor=#9254de;strokeWidth=1;fontSize=12;align=center;verticalAlign=middle" 
+                vertex="1" parent="1">
+          <mxGeometry x="590" y="300" width="140" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- 5. 组件依赖关系（实线箭头：调用依赖） -->
+        <!-- 前端 → 控制器 -->
+        <mxCell id="10" value="HTTP/REST" 
+                style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#1890ff;strokeWidth=1.5;labelBackgroundColor=#fff;labelPadding=3;fontSize=10" 
+                edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="150" as="source"/>
+            <mxPoint x="340" y="220" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 前端 → 地图服务 -->
+        <mxCell id="11" value="JavaScript API" 
+                style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#1890ff;strokeWidth=1.5;labelBackgroundColor=#fff;labelPadding=3;fontSize=10" 
+                edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="150" as="source"/>
+            <mxPoint x="340" y="380" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 控制器 → 业务服务 -->
+        <mxCell id="12" value="Spring Dependency" 
+                style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#36b37e;strokeWidth=1.5;labelBackgroundColor=#fff;labelPadding=3;fontSize=10" 
+                edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="255" as="source"/>
+            <mxPoint x="480" y="255" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 业务服务 → 数据访问 -->
+        <mxCell id="13" value="Spring Dependency" 
+                style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#36b37e;strokeWidth=1.5;labelBackgroundColor=#fff;labelPadding=3;fontSize=10" 
+                edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="255" as="source"/>
+            <mxPoint x="710" y="255" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 业务服务 → 地图服务 -->
+        <mxCell id="14" value="HTTP Client" 
+                style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#36b37e;strokeWidth=1.5;labelBackgroundColor=#fff;labelPadding=3;fontSize=10" 
+                edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="290" as="source"/>
+            <mxPoint x="340" y="380" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 数据访问 → 数据库 -->
+        <mxCell id="15" value="JDBC" 
+                style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#ff8c00;strokeWidth=1.5;labelBackgroundColor=#fff;labelPadding=3;fontSize=10" 
+                edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="290" as="source"/>
+            <mxPoint x="710" y="380" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 6. 接口依赖关系（虚线箭头：实现依赖） -->
+        <!-- 前端依赖路线推荐接口 -->
+        <mxCell id="16" value="依赖" 
+                style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#9254de;strokeWidth=1;strokeDasharray=5,3;labelBackgroundColor=#fff;labelPadding=3;fontSize=10" 
+                edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="150" as="source"/>
+            <mxPoint x="510" y="150" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 控制器实现路线推荐接口 -->
+        <mxCell id="17" value="实现" 
+                style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#9254de;strokeWidth=1;strokeDasharray=5,3;labelBackgroundColor=#fff;labelPadding=3;fontSize=10" 
+                edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="170" as="source"/>
+            <mxPoint x="370" y="170" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 业务服务依赖文物仓库接口 -->
+        <mxCell id="18" value="依赖" 
+                style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#9254de;strokeWidth=1;strokeDasharray=5,3;labelBackgroundColor=#fff;labelPadding=3;fontSize=10" 
+                edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="290" as="source"/>
+            <mxPoint x="570" y="320" as="target"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 数据访问实现文物仓库接口 -->
+        <mxCell id="19" value="实现" 
+                style="shape=arrow;startArrow=none;endArrow=arrow;strokeColor=#9254de;strokeWidth=1;strokeDasharray=5,3;labelBackgroundColor=#fff;labelPadding=3;fontSize=10" 
+                edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="300" as="source"/>
+            <mxPoint x="710" y="320" as="target"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
