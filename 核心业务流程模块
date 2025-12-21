@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0" version="28.2.6">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.4" pages="2">
   <diagram id="route-recommendation-flow" name="路线推荐业务流程">
     <mxGraphModel dx="890" dy="1337" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -135,6 +135,105 @@
               <mxPoint x="580" y="180" />
             </Array>
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="FXUHLDSdEBGXgUtEw4K5" name="第 2 页">
+    <mxGraphModel dx="1124" dy="2006" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LqMmXPgiYPEImrb2qvwQ-11" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=22;" value="展区数据&#xa;MySQL" vertex="1">
+          <mxGeometry height="78" width="124" x="371" y="449" as="geometry" />
+        </mxCell>
+        <mxCell id="LqMmXPgiYPEImrb2qvwQ-12" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=22;" value="文物数据&#xa;MySQL" vertex="1">
+          <mxGeometry height="78" width="124" x="674" y="449" as="geometry" />
+        </mxCell>
+        <mxCell id="LqMmXPgiYPEImrb2qvwQ-13" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=22;" value="业务数据&#xa;MySQL" vertex="1">
+          <mxGeometry height="78" width="124" x="880" y="449" as="geometry" />
+        </mxCell>
+        <mxCell id="LqMmXPgiYPEImrb2qvwQ-14" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=22;" value="豆包 API" vertex="1">
+          <mxGeometry height="54" width="152" x="55" y="461" as="geometry" />
+        </mxCell>
+        <mxCell id="LqMmXPgiYPEImrb2qvwQ-15" edge="1" parent="1" source="LqMmXPgiYPEImrb2qvwQ-5" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=22;startSize=8;endSize=8;" target="LqMmXPgiYPEImrb2qvwQ-7" value="HTTP/RESTful API">
+          <mxGeometry relative="1" x="-0.2734" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LqMmXPgiYPEImrb2qvwQ-16" edge="1" parent="1" source="LqMmXPgiYPEImrb2qvwQ-6" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=22;startSize=8;endSize=8;" target="LqMmXPgiYPEImrb2qvwQ-8" value="HTTP/RESTful API">
+          <mxGeometry relative="1" x="-0.2812" as="geometry">
+            <mxPoint y="-1" as="offset" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LqMmXPgiYPEImrb2qvwQ-17" edge="1" parent="1" source="LqMmXPgiYPEImrb2qvwQ-9" style="curved=1;startArrow=none;endArrow=block;exitX=0.95;exitY=1;entryX=0;entryY=0.01;rounded=0;fontSize=22;startSize=8;endSize=8;" target="LqMmXPgiYPEImrb2qvwQ-11" value="数据访问">
+          <mxGeometry relative="1" x="-0.3811" as="geometry">
+            <mxPoint y="-1" as="offset" />
+            <Array as="points">
+              <mxPoint x="330" y="350" />
+              <mxPoint x="330" y="424" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LqMmXPgiYPEImrb2qvwQ-18" edge="1" parent="1" source="LqMmXPgiYPEImrb2qvwQ-9" style="curved=1;startArrow=none;endArrow=block;exitX=0.17;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=22;startSize=8;endSize=8;" target="LqMmXPgiYPEImrb2qvwQ-14" value="智能问答">
+          <mxGeometry relative="1" x="-0.3805" y="4" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="131" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LqMmXPgiYPEImrb2qvwQ-19" edge="1" parent="1" source="LqMmXPgiYPEImrb2qvwQ-7" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.71;entryY=0;rounded=0;fontSize=22;startSize=8;endSize=8;" target="LqMmXPgiYPEImrb2qvwQ-11" value="数据访问">
+          <mxGeometry relative="1" x="-0.2684" y="-1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+            <Array as="points">
+              <mxPoint x="475" y="424" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LqMmXPgiYPEImrb2qvwQ-20" edge="1" parent="1" source="LqMmXPgiYPEImrb2qvwQ-8" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=22;startSize=8;endSize=8;" target="LqMmXPgiYPEImrb2qvwQ-12" value="数据访问">
+          <mxGeometry relative="1" x="-0.2444" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LqMmXPgiYPEImrb2qvwQ-21" edge="1" parent="1" source="LqMmXPgiYPEImrb2qvwQ-10" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=22;startSize=8;endSize=8;" target="LqMmXPgiYPEImrb2qvwQ-13" value="数据访问">
+          <mxGeometry relative="1" x="-0.2267" as="geometry">
+            <mxPoint y="-1" as="offset" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LqMmXPgiYPEImrb2qvwQ-26" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=62;fontSize=22;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="【表现层 Presentation Layer】" vertex="1">
+          <mxGeometry height="200" width="542" x="335" y="-249" as="geometry" />
+        </mxCell>
+        <mxCell id="LqMmXPgiYPEImrb2qvwQ-5" parent="LqMmXPgiYPEImrb2qvwQ-26" style="whiteSpace=wrap;strokeWidth=2;fontSize=22;" value="游客端 Web UI&#xa;Vue 3 + Element-Plus" vertex="1">
+          <mxGeometry height="78" width="211" x="36" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="LqMmXPgiYPEImrb2qvwQ-6" parent="LqMmXPgiYPEImrb2qvwQ-26" style="whiteSpace=wrap;strokeWidth=2;fontSize=22;" value="管理员端 Web UI&#xa;Vue 3 + Element-Plus" vertex="1">
+          <mxGeometry height="78" width="211" x="295.5" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="LqMmXPgiYPEImrb2qvwQ-32" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=70;fontSize=22;fillColor=#d5e8d4;strokeColor=#82b366;" value="【应用层/业务逻辑层】&lt;div&gt;Application/Business Layer&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="1000" x="92" y="57" as="geometry" />
+        </mxCell>
+        <mxCell id="LqMmXPgiYPEImrb2qvwQ-9" parent="LqMmXPgiYPEImrb2qvwQ-32" style="whiteSpace=wrap;strokeWidth=2;fontSize=22;" value="路线推荐模块&#xa;AI算法服务" vertex="1">
+          <mxGeometry height="78" width="156" x="79" y="101" as="geometry" />
+        </mxCell>
+        <mxCell id="LqMmXPgiYPEImrb2qvwQ-7" parent="LqMmXPgiYPEImrb2qvwQ-32" style="whiteSpace=wrap;strokeWidth=2;fontSize=22;" value="展区管理模块" vertex="1">
+          <mxGeometry height="54" width="156" x="306.5" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="LqMmXPgiYPEImrb2qvwQ-8" parent="LqMmXPgiYPEImrb2qvwQ-32" style="whiteSpace=wrap;strokeWidth=2;fontSize=22;" value="文物管理模块" vertex="1">
+          <mxGeometry height="54" width="156" x="566" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="LqMmXPgiYPEImrb2qvwQ-10" parent="LqMmXPgiYPEImrb2qvwQ-32" style="whiteSpace=wrap;strokeWidth=2;fontSize=22;" value="用户交互模块" vertex="1">
+          <mxGeometry height="54" width="156" x="772" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="LqMmXPgiYPEImrb2qvwQ-35" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=58;fontSize=22;fillColor=#e1d5e7;strokeColor=#9673a6;" value="【数据持久层&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;】&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Persistence Layer&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="781" x="284" y="358" as="geometry" />
+        </mxCell>
+        <mxCell id="LqMmXPgiYPEImrb2qvwQ-36" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=58;fontSize=22;fillColor=#f8cecc;strokeColor=#b85450;" value="【第三方服务层】&lt;div&gt;External Services&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="224" x="19" y="358" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
